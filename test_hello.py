@@ -1,4 +1,4 @@
-# test_hello.py
+# test_hello.py app
 from hello import app
 
 def test_hello():
