@@ -29,8 +29,7 @@ jobs:
           # Change to 'master' if your main branch differs
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # default value for black and flake8 are true
-          VALIDATE_PYTHON_BLACK: true
+          # default value for VALIDATE_PYTHON_FLAKE8 and VALIDATE_PYTHON_BLACK are true
           VALIDATE_PYTHON_FLAKE8: false
 
   lint-with-flake8:
@@ -56,7 +55,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # default value for black and flake8 are true
           VALIDATE_PYTHON_BLACK: false
-          VALIDATE_PYTHON_FLAKE8: true
 
   unit-test:
     runs-on: ubuntu-latest
